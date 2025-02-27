@@ -164,6 +164,23 @@ local Toggle = EXPTab:CreateToggle({
             end
                         end)
                     end
+                    local args = {
+    [1] = Vector3.new(-80.19454193115234, 595.6495361328125, 813.2150268554688),
+    [2] = "NewLightningball"
+}
+
+ isHitting = Value
+
+        if isHitting then
+            -- Lancer une boucle non bloquante
+            task.spawn(function()
+                while isHitting do
+
+game:GetService("ReplicatedStorage").SkillsInRS.RemoteEvent:FireServer(unpack(args))
+task.wait(0.1) -- Pause
+end
+            end)
+        end
    -- The function that takes place when the toggle is pressed
    -- The variable (Value) is a boolean on whether the toggle is true or false
    end,
@@ -179,7 +196,8 @@ local Toggle = EXPTab:CreateToggle({
    CurrentValue = false,
    Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
-   local args = {
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-81.58647155761719, 594.46826171875, 814.044189453125)
+local args = {
     [1] = workspace.MAP:FindFirstChild("5k_dummies").Dummy2.Humanoid,
     [2] = 4
 }
@@ -225,6 +243,23 @@ local Toggle = EXPTab:CreateToggle({
         end
                     end)
                 end
+                local args = {
+    [1] = Vector3.new(-126.91341400146484, 646.3195190429688, 594.6644287109375),
+    [2] = "NewLightningball"
+}
+
+ isHitting = Value
+
+        if isHitting then
+            -- Lancer une boucle non bloquante
+            task.spawn(function()
+                while isHitting do
+
+game:GetService("ReplicatedStorage").SkillsInRS.RemoteEvent:FireServer(unpack(args))
+task.wait(0.1) -- Pause
+end
+            end)
+        end
    -- The function that takes place when the toggle is pressed
    -- The variable (Value) is a boolean on whether the toggle is true or false
    end,
