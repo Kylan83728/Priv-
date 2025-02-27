@@ -164,8 +164,8 @@ local Toggle = EXPTab:CreateToggle({
             end
                         end)
                     end
-                    local args = {
-    [1] = Vector3.new(-80.19454193115234, 595.6495361328125, 813.2150268554688),
+ local args = {
+    [1] = Vector3.new(-126.91341400146484, 646.3195190429688, 594.6644287109375),
     [2] = "NewLightningball"
 }
 
@@ -192,7 +192,7 @@ local Section = EXPTab:CreateSection("Farm 5K")
 
 local isHitting = false
 local Toggle = EXPTab:CreateToggle({
-   Name = "Farm Dummy Spawn",
+   Name = "Farm Dummy 5K",
    CurrentValue = false,
    Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
@@ -243,8 +243,8 @@ local Toggle = EXPTab:CreateToggle({
         end
                     end)
                 end
-                local args = {
-    [1] = Vector3.new(-126.91341400146484, 646.3195190429688, 594.6644287109375),
+local args = {
+    [1] = Vector3.new(-80.19454193115234, 595.6495361328125, 813.2150268554688),
     [2] = "NewLightningball"
 }
 
